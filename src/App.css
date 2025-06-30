@@ -1,0 +1,142 @@
+#root {
+  max-width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* general flexbox things*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.header {
+  position: sticky;
+  top: 20px;
+}
+
+
+/* ========= OTHER PAGES =========== */
+.general {
+  background: #F9DBC1;
+  max-width: 100%;
+  height: 100vh;
+}
+
+
+/* ========= FRONT PAGE WORK ===========*/
+
+/* for front page*/
+.front-page {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100vh;
+
+  box-sizing: border-box;
+  border-top: 100px solid #000;
+  border-left: 40px solid #000;
+  border-right: 40px solid #000;
+
+
+  background-image: url("/images/ion-thruster.jpg");
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 100px;
+
+}
+
+/* Front page text */
+.front-name {
+  font-weight: 600;
+  color: #F9DBC1;
+  font-size:96px;
+  text-shadow: 2px 6px 0px #F6723D,
+    -2px -2px 0 #F6723D,
+     0   -2px 0 #F6723D,
+     2px -2px 0 #F6723D,
+     2px  0   0 #F6723D,
+     2px  2px 0 #F6723D,
+     0    2px 0 #F6723D,
+    -2px  2px 0 #F6723D,
+    -2px  0   0 #F6723D;
+  letter-spacing: 3px;
+
+  text-align: center;
+  justify-content: center;
+}
+.front-title {
+  font-weight: 600;
+  color: #F9DBC1;
+  font-size: 64px;
+  text-shadow: 1px 5px 0px #F6723D;
+
+  text-align: center;
+  justify-content: center;
+}
+.front-slogan {
+  font-weight: 300;
+  color:#C3F7F0;
+  font-size: 64px;
+  margin-top: auto;
+  background: #000;
+
+}
+
+/* Front page buttons */
+.front-button {
+  transition: 0.25s ease;
+  text-align: center;
+  background: none;
+}
+
+.front-button-resume {
+  font-weight: 500;
+  font-size: 24px;
+  color: #F9DBC1;
+  text-shadow: 1px 2px 0px #F6723D;
+  letter-spacing: 2px;
+
+  margin-top: 10%;
+  padding: 15px 25px;
+
+  border: 3px solid #F9DBC1;
+  box-shadow: 3px 3px 0px #F6723D, inset 2px 2px 0px #F6723D;
+}
+
+.front-button-resume:hover {
+  color: #C3F7F0;
+  text-shadow: 1px 2px 0px #0f1025;
+
+  border: 3px solid #C3F7F0;
+  box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
+}
+
+.front-button-navbar {
+  font-weight: 400;
+  font-size: 48px;
+  color: #F9DBC1;
+
+  margin-top: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+}
+
+.front-button-navbar:hover {
+  color: #C3F7F0;
+  text-shadow: 1px 2px 0px #0f1025;
+  text-decoration:underline;
+}

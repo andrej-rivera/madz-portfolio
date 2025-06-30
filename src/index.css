@@ -1,0 +1,26 @@
+@font-face{
+  font-family: Jost;
+  src: url("../src/assets/fonts/Jost-VariableFont_wght.ttf");
+}
+
+@font-face{
+  font-family: Jost-italic;
+  src: url("../src/assets/fonts/Jost-Italic-VariableFont_wght.ttf");
+}
+
+@font-face{
+  font-family: Damion;
+  src: url("../src/assets/fonts/Damion-Regular.ttf");
+}
+
+
+:root {
+  font-family: Jost, system-ui, sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
