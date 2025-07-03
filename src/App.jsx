@@ -6,10 +6,10 @@ function App() {
   return (
     <>
       {/* ==== front page ==== */}
-      <header className="column">
+      <header className="">
         <h1>MADISON SCHOOLEY</h1>
         <h2>ROCKET SCIENTIST</h2>
-        <div className="row">
+        <div>
           <button className="button header-button-resume"> RESUME</button>
         </div>
 
@@ -41,15 +41,15 @@ function App() {
         </nav>
 
         {/* ==== about me ==== */}
-        <about className="row">
-          <div className="column">
-            <h1>Hi I'm Madz!</h1>
+        <div className="about-me">
+          <div className="">
+            <h1 className="about-me-h1">Hi I'm Madz!</h1>
             <p>
-              I am a graduate from San Jose State University with a Bachelor’s degree in aerospace engineering.  
+              I am a graduate from San Jose State University with a Bachelor's degree in aerospace engineering.  
             </p>
           </div>
           <img src="/images/about-me.jpg" width="640" alt="Profile" className="about-me-image"/>
-        </about>
+        </div>
 
         {/* ==== projects ==== */}
         {/* ==== blog ==== */}
