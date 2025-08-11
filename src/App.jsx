@@ -48,7 +48,7 @@ function App() {
               I am a graduate from San Jose State University with a Bachelor's degree in aerospace engineering.  
             </p>
           </div>
-          <img src="/images/about-me.jpg" width="640" alt="Profile" className="about-me-image"/>
+          {/* <img src="/images/about-me.jpg" width="640" alt="Profile" className="about-me-image"/> */}
         </div>
 
         {/* ==== projects ==== */}
