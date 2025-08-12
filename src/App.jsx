@@ -23,7 +23,7 @@ function App() {
         <h3> IT'S NOT BRAIN SURGERY</h3>
       </header>
       
-
+<script> /*** 
       {/* ==== everything else ==== */}
       <main>
         
@@ -48,9 +48,7 @@ function App() {
               I am a graduate from San Jose State University with a Bachelor's degree in aerospace engineering.  
             </p>
           </div>
-          {/* <img src="/images/about-me.jpg" width="640" alt="Profile" className="about-me-image"/> */}
         </div>
-
         {/* ==== projects ==== */}
         {/* ==== blog ==== */}
         {/* ==== contact me ==== */}
@@ -58,6 +56,8 @@ function App() {
         
 
       </main>
+      ***/
+</script>
     </>
   )
 }
