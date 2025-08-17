@@ -6,58 +6,76 @@ function App() {
   return (
     <>
       {/* ==== front page ==== */}
-      <header className="">
+      <hero className="">
         <h1>MADISON SCHOOLEY</h1>
         <h2>ROCKET SCIENTIST</h2>
         <div>
-          <button className="button header-button-resume"> RESUME</button>
+          <button className="button hero-button-resume"> RESUME</button>
         </div>
 
         <div className="row">
-          <button className="header-button-navbar"> About</button>
-          <button className="header-button-navbar"> Projects</button>
-          <button className="header-button-navbar"> Blog</button>
+          <button className="hero-button-navbar"> About</button>
+          <button className="hero-button-navbar"> Projects</button>
+          <button className="hero-button-navbar"> Blog</button>
 
         </div>
 
         <h3> IT'S NOT BRAIN SURGERY</h3>
-      </header>
+      </hero>
       
-<script> /*** 
+
       {/* ==== everything else ==== */}
       <main>
         
-        {/* ==== navbar ==== */}
-        <nav className="row"> 
+        {/* ==== navbar header ==== */}
+        <header className="row"> 
             <h1> MADISON SCHOOLEY </h1>
-            <navbar>
-              <button className="navbar-button">About</button>
-              <button className="navbar-button">Projects</button>
-              <button className="navbar-button">Blog</button>
+            <nav>
+              <button>About</button>
+              <button>Projects</button>
+              <button>Blog</button>
 
-            </navbar>
+            </nav>
 
-            <button className="navbar-button-resume"> RESUME</button>
-        </nav>
+            <button className="resume"> RESUME</button>
+        </header>
 
         {/* ==== about me ==== */}
-        <div className="about-me">
-          <div className="">
+        <article className="about-me">
+          <section className="about-me-text">
             <h1 className="about-me-h1">Hi I'm Madz!</h1>
             <p>
               I am a graduate from San Jose State University with a Bachelor's degree in aerospace engineering.  
             </p>
-          </div>
-        </div>
+          </section>
+          <section className="about-me-image">
+            <img src='images/about-me.jpg'></img>
+          </section>
+        </article>
         {/* ==== projects ==== */}
+        <article className="projects">
+          <section>
+            <img></img>
+            <h2>Hall-Effect Thruster</h2>
+          </section>
+
+          <section>
+            <img></img>
+            <h2>Spartan Space Systems</h2>
+          </section>
+
+          <section>
+            <img></img>
+            <h2>Cheese Rocket</h2>
+          </section>
+        </article>
+
         {/* ==== blog ==== */}
         {/* ==== contact me ==== */}
 
         
 
       </main>
-      ***/
-</script>
     </>
   )
 }

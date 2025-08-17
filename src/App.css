@@ -12,7 +12,7 @@
   --fs-400: 1rem;
 }
 
-/* general flexbox things*/
+/* general things*/
 .row {
   display: flex;
   flex-direction: row;
@@ -27,63 +27,67 @@
   flex: 1;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-/* ========= NAVBAR =========== */
 
-nav{
+/* ========= NAVBAR HEADER =========== */
+header{
   position: sticky;
   padding-top: 50px;
   width: 100%;
   justify-content: none;
+  align-items: center;
 }
 
-nav h1 {
+header h1 {
   font-weight: 500;
-  font-size: 42px;
+  font-size: var(--fs-800);
   color: #F6723D;
-  margin-left: 64px;
+  margin-left: 4rem;
   margin-right: 5%;
   letter-spacing: 1px;
 }
 
-navbar{
+nav{
   margin-right:auto;
-  display: inline-flex;
-  gap: 40px;
+  display: flex;
+  gap: 10%;
 }
 
-.navbar-button {
+nav button {
   font-weight: 400;
-  font-size: 48px;
+  font-size: var(--fs-800);
   color: #F6723D;
   border: none;
 }
 
-.navbar-button:hover {
+nav button:hover {
   color: #C3F7F0;
   text-shadow: 1px 2px 0px #0f1025;
   text-decoration:underline;
 }
 
-.navbar-button-resume {
+header .resume {
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--fs-600);
+  letter-spacing: 2px;
   color: #F6723D;
   text-shadow: 1px 2px 0px #0f1025;
-  letter-spacing: 2px;
 
-  padding: 15px 25px;
-  margin-right: 100px;
+  padding: 0.75rem 1.5rem;
+  margin-right: 3rem;
 
   border: 3px solid #F6723D;
   box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
 }
 
-.navbar-button-resume:hover {
+header .resume:hover {
+  border: 3px solid #C3F7F0;
   color: #C3F7F0;
   text-shadow: 1px 2px 0px #0f1025;
-
-  border: 3px solid #C3F7F0;
   box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
 }
 
@@ -91,21 +95,21 @@ navbar{
 /* ========= OTHER PAGES =========== */
 main {
   background: #F9DBC1;
-  min-width: 100vh;
-  height: 100vh;
+  padding-bottom: 100px;
 }
 
 .about-me {
   padding-top: 100px;
   display: grid;
   grid-gap: 1em;
-  grid-template-rows: auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.about-me-h1 {
+.about-me-text h1 {
   font-family: 'Damion';
-  font-size: 5rem;
+  font-size: var(--fs-xl);
   color: #F6723D;
   text-shadow:
     -5px 5px 0 #000;
@@ -113,10 +117,25 @@ main {
   padding-bottom: 50px;
   }
 
+  .about-me-text p {
+
+  }
+
+  .about-me-image {
+    width: 80%;
+  }
+
+  .projects {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 20px;
+  }
+
 /* ========= FRONT PAGE WORK ===========*/
 
 /* for front page*/
-header {
+hero {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -142,7 +161,7 @@ header {
 
 
 /* Front page text */
-header h1 {
+hero h1 {
   font-weight: 600;
   color: #F9DBC1;
   font-size:  var(--fs-xl);
@@ -158,7 +177,7 @@ header h1 {
   letter-spacing: 3px;
 
 }
-header h2 {
+hero h2 {
   font-weight: 600;
   color: #F9DBC1;
   font-size: var(--fs-l);
@@ -167,12 +186,12 @@ header h2 {
   white-space: nowrap;
 
 }
-header h3 {
+hero h3 {
   font-weight: 300;
   color:#C3F7F0;
   font-size: var(--fs-l);
   background: #000;
-
+  object-fit: fill;
   padding: 5px
 }
 
@@ -183,7 +202,7 @@ button {
   background: none;
 }
 
-.header-button-resume {
+.hero-button-resume {
   font-weight: 400;
   font-size: var(--fs-600);
   color: #F9DBC1;
@@ -196,7 +215,7 @@ button {
   box-shadow: 3px 3px 0px #F6723D, inset 2px 2px 0px #F6723D;
 }
 
-.header-button-resume:hover {
+.hero-button-resume:hover {
   color: #C3F7F0;
   text-shadow: 1px 2px 0px #0f1025;
 
@@ -204,7 +223,7 @@ button {
   box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
 }
 
-.header-button-navbar {
+.hero-button-navbar {
   font-weight: 400;
   font-size: var(--fs-l);
   color: #F9DBC1;
@@ -223,14 +242,20 @@ button {
 
 
 @media (max-width: 40em) {
-  header {
+  hero {
     border-left: 0px;
     border-right: 0px;
     background-position:left;
     background-position-x: -250px;
   }
 
-  .header-button-navbar {
+  .hero-button-navbar {
     display:none;
+  }
+}
+
+@media (max-height: 800px) {
+  hero {
+      padding-top: 50px;
   }
 }
