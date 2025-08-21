@@ -16,6 +16,7 @@
 
 *, html {
     scroll-behavior: smooth !important;
+    box-sizing: border-box;
 
 }
 
@@ -26,6 +27,11 @@
 }
 
 /* general things*/
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -50,42 +56,47 @@ header{
   position: sticky;
   top: 0;
   padding: 25px 0;
-  z-index: 1;
   width: 100%;
+  z-index: 1000;
 
-  justify-content: none;
+  justify-content: space-between;
   align-items: center;
 
-  background: #F9DBC1;
-  border-bottom:#F6723D 3px solid;
+  /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(2rem);
+
 }
 
 header h1 {
   font-weight: 500;
   font-size: var(--fs-800);
   color: #F6723D;
-  margin-left: 4rem;
-  margin-right: 5%;
+  margin-left: 2rem;
   letter-spacing: 1px;
 }
 
-nav{
-  margin-right:auto;
-  display: flex;
-  gap: 10%;
+.navigation {
+  list-style:none;
+  padding: 0;
+  margin: 0;
 }
 
-nav button {
+
+
+.navigation a {
   font-weight: 400;
   font-size: var(--fs-800);
   color: #F6723D;
-  border: none;
+  
+  text-decoration: none;
 }
 
-nav button:hover {
+.navigation a:hover {
   color: #C3F7F0;
   text-shadow: 1px 2px 0px #0f1025;
   text-decoration:underline;
+
+
 }
 
 header .resume {
@@ -100,6 +111,8 @@ header .resume {
 
   border: 3px solid #F6723D;
   box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
+  backdrop-filter: blur(1rem);
+
 }
 
 header .resume:hover {
@@ -109,11 +122,91 @@ header .resume:hover {
   box-shadow: 3px 3px 0px #0f1025, inset 2px 2px 0px #0f1025;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 40em) {
+  header {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .navigation {
+    
+    --gap: 3em;
+    z-index: 1000;
+
+    position: absolute;
+    inset: 0 0 0 0; /* 30% off right side */
+    text-align: end;
+
+    flex-direction: column;
+
+    padding-top: 15vh;
+    padding-bottom: 100vh;
+    padding-right: 2rem;
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+
+    background: rgba(0, 0, 0, 0.75);
+   }
+
+   header h1 {
+    z-index: 9999;
+    font-size: clamp(1rem, 6vw + 0.125rem, 1.5rem);
+    text-wrap: wrap;
+    
+    margin: auto;
+    position: absolute;
+    top: 1.75rem;
+    left: 2rem;
+
+    padding-right: 25vw;
+    transform: translateX(200%);
+    transition: transform 350ms ease-in;
+   }
+
+   header h1[data-visible="true"] {
+
+
+    transform: translateX(0%);
+    }
+
+  .navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+   .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+
+    /* background: url("/images/icon-hamburger.svg");
+    background-repeat: no-repeat; */
+    border: 0;
+    color: white;
+
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 1.5rem;
+    right: 2rem;
+
+   }
+}
+
+
+
+
+
 
 /* ========= OTHER PAGES =========== */
 main {
   background: #F9DBC1;
   padding-bottom: 100px;
+  
 }
 
 .about-me {
@@ -123,11 +216,12 @@ main {
   grid-template-columns: 1fr 1fr;
 
   width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-me-text {
-  padding: 50px;
+  padding: 100px 0;
 }
 
 .about-me-text h1 {
@@ -153,6 +247,7 @@ main {
   .projects {
     padding: 100px 0;
     width: 80%; 
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -309,6 +404,9 @@ button {
 
   border: 3px solid #F9DBC1;
   box-shadow: 3px 3px 0px #F6723D, inset 2px 2px 0px #F6723D;
+
+  backdrop-filter: blur(2rem);
+
 }
 
 .hero-button-resume:hover {

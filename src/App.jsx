@@ -3,6 +3,13 @@ import './App.css'
 
 function App() {
 
+  const [navVisible, setNavVisible] = useState(false);
+
+  const handleNavToggle = () => {
+    setNavVisible(!navVisible);
+    console.log(navVisible);
+  };
+
   return (
     <>
       {/* ==== front page ==== */}
@@ -23,23 +30,36 @@ function App() {
         <h3> IT'S NOT BRAIN SURGERY</h3>
       </hero>
       
-      {/* ==== navbar header ==== */}
-      {/* <header className="row"> 
-          <h1> MADISON SCHOOLEY </h1>
-          <nav>
-            <button>About</button>
-            <button>Projects</button>
-            <button>Blog</button>
 
-          </nav>
-
-          <button className="resume"> RESUME</button>
-      </header> */}
 
       {/* ==== everything else ==== */}
       <main>
         
 
+        {/* ==== navbar header ==== */}
+        <header className="flex"> 
+            
+            <h1 data-visible={navVisible}> MADISON SCHOOLEY </h1>
+            
+            
+            <button onClick={handleNavToggle} className="mobile-nav-toggle" aria-expanded="false" aria-controls="navigation"> 
+              <span className="sr-only"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F6723D"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></span>
+            </button>
+
+
+            {/* note: aria-... is to help accessibility */}
+            <nav>
+
+              <ul className="navigation flex" id="navigation" data-visible={navVisible}>
+                <li><a>About</a> </li>
+                <li><a>Projects</a></li>
+                <li><a>Blog</a></li>
+                <li></li>
+              </ul>
+
+            </nav>
+{/* <a className="resume"> RESUME</a> */}
+        </header>
 
         {/* ==== about me ==== */}
         <article className="about-me" id="about-me">
