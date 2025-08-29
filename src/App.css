@@ -169,6 +169,18 @@ header .resume:hover {
     transition: transform 350ms ease-in;
    }
 
+
+   header > a {
+    text-decoration: none;
+    border: none;
+   }
+
+   header h1:hover {
+    color: #C3F7F0;
+    text-shadow: 1px 2px 0px #0f1025;
+
+   }
+
    header h1[data-visible="true"] {
 
 
@@ -289,6 +301,8 @@ main {
 
   .project-card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.3);
+
+    transform: scale(1.05);
   }
 
   .project-card > img {
@@ -306,21 +320,161 @@ main {
 
   .contact {
     width: 100%;
-    padding: 100px 0px;
+    padding: 50px 0px;
+
+    background: #ffebcd;
+    margin: 0 auto;
+  }
+
+  .contact h1 {
+    width:80%;
+    max-width: 1000px;
+    text-align: start;
+    margin: 0 auto;
   }
   
   .contact-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
-
+    display: flex;
+    flex-direction: row;
     width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 25px auto;
+    max-width: 1000px;
 
-    background-color:white;
+    text-align: start;
+  }
+
+  .contact-box-left {
+    /* background-color: yellow; */
+    flex-basis: 60%;
+
+    padding-right: 1rem;
+
+    /* padding: 20px; */
+  }
+
+  .contact-box-right {
+    /* background-color: orange; */
+    flex-basis: 40%;
+    padding: 20px;
+  }
 
 
+  .contact-form {
+    display: block;
+
+  }
+
+  .contact-form .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+  }
+
+  .contact-form > div {
+    padding: 10px 0;
+  }
+
+
+  .contact-form label {
+    font-weight: 500;
+    font-size: var(--fs-400);
+    color: #F6723D;
+
+    /* note: margin/padding doesn't work on labels, so we use line-height to control it */
+    line-height: 2rem; 
+  }
+
+  .contact-form input, textarea {
+    width:100%;
+    padding: 1rem;
+    resize: none;
+
+    border: 1px solid grey;
+    border-radius: 2px;
+  }
+
+  .contact-form input:invalid {
+    border: 1px solid red;
+  }
+
+  .contact-form input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #0f1025;
+    border-radius: 2px;
+
+    transition: 0.25s ease;
+
+  }
+
+  .contact-form button {
+    font-weight: 500;
+    font-size: var(--fs-400);
+    color: #F6723D;
+
+    padding: 10px 20px;
+    margin-top: 10px;
+
+    border: 3px solid #F6723D;
+
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color:#0f1025;
+    color: #F9DBC1;
+    border: 3px solid #F9DBC1;
+
+  }
+
+
+  @media (max-width: 40em) {
+    .contact-box {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .contact-box-left, .contact-box-right {
+      flex-basis: 100%;
+    }
+
+    .contact-form .container {
+      display: block;
+    }
+  }
+
+  .svg-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px 20px 10px 0;
+
+    font-weight: 500;
+    font-size: var(--fs-400);
+    background-color: #F6723D;
+    color:#F9DBC1;
+
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .svg-button:hover {
+    background-color:#0f1025;
+    color: #F9DBC1;
+
+    transition: 0.25s ease;
+  }
+
+  .svg-button svg {
+    fill: #F9DBC1;
+    height: 20px;
+    width: 20px;
+
+    display: inline-block;
+  }
+
+  .svg-button p {
+    display: inline-block;
   }
 
 /* ========= FRONT PAGE WORK ===========*/
