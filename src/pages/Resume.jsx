@@ -1,5 +1,5 @@
 import '../App.css'
-import Header from '../components/header'
+import Header from '../components/Header'
 import PDFObject from 'pdfobject'
 
 export default function Resume() {

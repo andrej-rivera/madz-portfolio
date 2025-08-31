@@ -1,6 +1,6 @@
 import '../App.css'
 import Contact from '../components/ContactForm'
-import Header from '../components/header'
+import Header from '../components/Header'
 
 export default function Home() {
     return (
