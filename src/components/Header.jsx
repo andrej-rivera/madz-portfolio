@@ -23,14 +23,12 @@ export default function Header() {
 
         {/* note: aria-... is to help accessibility */}
         <nav>
-
             <ul className="navigation flex" id="navigation" data-visible={navVisible}>
-            <li><a href="/#about-me">About</a> </li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            <li></li>
+                <li><a href="/#about-me">About</a> </li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <li></li>
             </ul>
-
         </nav>
     </header>
   );

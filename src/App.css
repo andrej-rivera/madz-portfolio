@@ -74,6 +74,9 @@ header{
   width: 100%;
   z-index: 1000;
 
+  max-width: 2000px;
+  margin: 0 auto;
+
   justify-content: space-between;
   align-items: center;
 
@@ -156,27 +159,36 @@ header .resume:hover {
     background: none;
     border: none;
     padding: 0;
+
   }
+
 
   .navigation {
     
     --gap: 3em;
     z-index: 1000;
 
-    position: absolute;
-    inset: 0 0 0 0; /* 30% off right side */
+    display: flex;
+    position: fixed;
     text-align: end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: 25%;
+    padding-right: 3rem;
 
     flex-direction: column;
 
-    padding-top: 15vh;
-    padding-bottom: 100vh;
-    padding-right: 2rem;
 
     transform: translateX(100%);
     transition: transform 350ms ease-in;
 
     background: rgba(0, 0, 0, 0.75);
+
+    overflow: hidden;
+
    }
 
    header h1 {
@@ -192,22 +204,19 @@ header .resume:hover {
     padding-right: 25vw;
     transform: translateX(200%);
     transition: transform 350ms ease-in;
+  
+    overflow: hidden;
    }
 
-
-
-
-
-
-   header h1[data-visible="true"] {
+  header h1[data-visible="true"] {
     transform: translateX(0%);
-    }
+  }
 
   .navigation[data-visible="true"] {
     transform: translateX(0%);
   }
 
-   .mobile-nav-toggle {
+  .mobile-nav-toggle {
     display: block;
     position: absolute;
     z-index: 9999;
@@ -220,7 +229,7 @@ header .resume:hover {
     top: 1.5rem;
     right: 2rem;
 
-   }
+  }
 }
 
 
@@ -393,6 +402,7 @@ main {
   padding: 100px 0;
 }
 
+
 .about-me-text h1 {
   font-family: 'Damion';
   font-size: var(--fs-xl);
@@ -410,6 +420,24 @@ main {
   .about-me-image {
     width: 80%;
     margin: 0 auto;
+  }
+
+@media (max-width: 40em) {
+    .about-me {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding-bottom: 0px;
+      gap: 50px;  
+    }
+
+    .about-me-text {
+      padding: 0;
+    }
+
+    .about-me-image {
+      width: 100%;
+      order: -1;
+    }
   }
 
 /* Projects */
@@ -651,17 +679,6 @@ main {
 
 /* ========= RESUME PAGE ===========*/
 .resume {
-  width:100vw;
-  height:100vh;
-
-  padding: 0px;
-  margin: 0px;
-}
-
-.resume-container {
-  width: 100%;
-  height: 100%;
-  
-  padding: 0px;
-  margin: 0px;
+  width: 100vw;
+  height: 100vh;
 }
