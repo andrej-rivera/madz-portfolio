@@ -52,7 +52,7 @@ export default function Home() {
                     <div className="projects-display">
 
                     {/* project cards */}
-                    <a href='/hall-thruster' class="project-card">
+                    <a class="project-card">
                         <img src="images/ion-thruster2.jpg"></img>
                         <h2>Hall-Effect Thruster</h2>
                     </a>
