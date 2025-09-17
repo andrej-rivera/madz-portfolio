@@ -20,6 +20,11 @@
 
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -163,23 +168,22 @@ header .resume:hover {
   }
 
 
+  .flex {
+    display: block
+  }
+
   .navigation {
     
-    --gap: 3em;
     z-index: 1000;
 
-    display: flex;
-    position: fixed;
     text-align: end;
-    top: 0;
-    left: 0;
+    position: absolute;
+
+
     width: 100%;
     min-height: 100vh;
-
-    padding-top: 25%;
+    padding-top: 15vh;
     padding-right: 3rem;
-
-    flex-direction: column;
 
 
     transform: translateX(100%);
@@ -187,7 +191,12 @@ header .resume:hover {
 
     background: rgba(0, 0, 0, 0.75);
 
-    overflow: hidden;
+    overflow-x: hidden;
+   }
+
+   .navigation > * {
+    margin-top: 2em;
+    overflow-x: hidden;
 
    }
 
@@ -205,7 +214,7 @@ header .resume:hover {
     transform: translateX(200%);
     transition: transform 350ms ease-in;
   
-    overflow: hidden;
+    overflow-x: hidden;
    }
 
   header h1[data-visible="true"] {

@@ -9,7 +9,7 @@ export default function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "c312add1-9e5b-40dd-82b3-4110580cd5e1");
+    formData.append("access_key", "0563da71-a0d9-4956-979f-6d8199649b35");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
