@@ -1,0 +1,39 @@
+{
+  "project1": {
+    "title": "Hall-Effect Thruster",
+    "images": [
+      "/images/ion-thruster.jpg",
+      "/images/ion-thruster2.jpg",
+      "/images/andre.jpg"
+    ],
+    "redirect": "/reports/thruster-report.pdf",
+    "content": [
+      "For my senior design project I worked on a small team of five to design and build a Hall-effect thruster starting from the ground up.  The thruster is small enough to operate on a 1U cubesat.  ",
+      "I was in charge of the testing for the thruster, but I did collaborate on different aspects of the project such as GD&T, modeling, and more.  I, along with my team, had no previous knowledge of in-depth concepts for electrical propulsion.  However, through research and dedication I was able to create an understanding of how Hall-effect thrusters work and could apply it to the project.",
+      "The thruster was tested at NASA JPL in a vacuum chamber.  Five different tests took place allowing us to make improvements.  The first and second tests were unfortunately unsuccessful.  The thruster created plasma, but the magnetic field was too high and created a sort of magnetic shielding.",
+      "The thruster didn’t create thrust at all which, by the way, was not at all what we were going for.  The third, fourth, and fifth tests were luckily much more successful than the first two.  After removing half of the magnets inside of the thruster the magnetic field was weaker than before, which was causing the problem in the first two tests.",
+      "The thruster successfully reached 300 Volts and 500 Watts respectively.  Although the thruster gave our entire team a scare due to a minor calculation error in the magnetic field the project ended in success."
+    ]
+  },
+
+  "project2": {
+    "title": "Spartan Space Systems",
+    "images": ["/images/spartan-space-systems.png", "/images/andre.jpg"],
+    "redirect": "/reports/sss-report.pdf",
+    "content": [
+      "Spartan Space Systems is a student-led club through San Jose State University.  The mission for this project was to design a payload that lands on Jupiter’s moon, Io, to collect data.  The payload would only utilize an electrodynamic tether as a propulsion system to navigate towards Io.  I was the lead of the structures and mechanisms sub-team.  I coordinated meeting times, set clear expectations for my team, and collaborated with other subteams to ensure our mission ran efficiently.  Our team designed the overall shape of the payload, the management of how the other components would be structured into the payload, and the landing system.",
+      "Although when I worked on the project it was purely brainstorming and hypotheticals I learned important skills especially when starting a new project.  I especially learned that the toughest part of aerospace engineering is trying to achieve what no one else has dared to try.  For the majority of this project we only had base information on what to expect, but it was up to us to deliver.  As tough as it was to blind fire ideas it was more exhilarating when something stuck.  This was the first big project I was part of that started from the ground up and I gained a lot of experience from it."
+    ]
+  },
+
+  "project3": {
+    "title": "Glorified Lawn Dart Cheese",
+    "images": ["/images/cheese.jpg"],
+    "redirect": "/reports/cheese-report.pdf",
+    "content": [
+      "Glorified Lawn Lawn Dart AKA Cheese is the brilliantly named rocket that I designed and built from scratch.  The rocket was made for an L1 certification flight that also has the capabilities and structure for an L2 certification flight.  I was able to design, model, and simulate my rocket to create a perfected version.  I then made adjustments based on my knowledge of aerodynamics and subsonic flight.  The body of the rocket was fiberglass.  The nose cone, bulkheads, and avionics bay were 3-D printed.",
+      "The nose cone was designed to take the form of a Haak series with a slim and sharply curved tip designed for supersonic speeds.  The length of the nose cone was 215 mm and a diameter of 40.5 mm.  I designed the nose cone to have a shoulder that could be detachable for the avionics to sit in.  The shoulder serves as an avionics bay.  The middle hole is where the eyer screw for the shock cord to be tied to is attached.  The avionics bay has a smaller diameter that sits inside of the nose cone while the larger diameter friction fits into the body tube.  The avionics bay was designed to screw into the nose cone so it does not separate while deploying the recovery system.  The fin can was designed to optimize stability and utilizes 4 fins.  I also soldered an Eggtimer Quark that hooked up to a battery for the avionics.  The motor used was a H283ST-15A Aerotech, which provided my rocket with the perfect amount of thrust.",
+      "Cheese soared through the sky beautifully reaching the expected apogee and perfectly deploying the recovery system allowing it to touch down without a scratch.  I was able to earn my L1 certification and had an extreme amount of fun while doing it.  I hope to use Cheese for my L2 certification flight in the future."
+    ]
+  }
+}
