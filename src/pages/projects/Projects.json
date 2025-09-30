@@ -1,7 +1,11 @@
 {
   "project1": {
     "title": "Hall-Effect Thruster",
-    "images": ["/images/ion-thruster.jpg", "/images/ion-thruster2.jpg"],
+    "images": [
+      "/images/ion-thruster.jpg",
+      "/images/ion-thruster2.jpg",
+      "/images/ion-thruster3.png"
+    ],
     "redirect": "/reports/thruster-report.pdf",
     "content": [
       "For my senior design project I worked on a small team of five to design and build a Hall-effect thruster starting from the ground up.  The thruster is small enough to operate on a 1U cubesat.  ",
@@ -24,7 +28,11 @@
 
   "project3": {
     "title": "Glorified Lawn Dart Cheese",
-    "images": ["/images/cheese.jpg"],
+    "images": [
+      "/images/cheese.jpg",
+      "/images/cheese2.jpg",
+      "/images/cheese3.jpg"
+    ],
     "redirect": "/reports/cheese-report.pdf",
     "content": [
       "Glorified Lawn Lawn Dart AKA Cheese is the brilliantly named rocket that I designed and built from scratch.  The rocket was made for an L1 certification flight that also has the capabilities and structure for an L2 certification flight.  I was able to design, model, and simulate my rocket to create a perfected version.  I then made adjustments based on my knowledge of aerodynamics and subsonic flight.  The body of the rocket was fiberglass.  The nose cone, bulkheads, and avionics bay were 3-D printed.",
