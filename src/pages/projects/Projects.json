@@ -1,11 +1,7 @@
 {
   "project1": {
     "title": "Hall-Effect Thruster",
-    "images": [
-      "/images/ion-thruster.jpg",
-      "/images/ion-thruster2.jpg",
-      "/images/andre.jpg"
-    ],
+    "images": ["/images/ion-thruster.jpg", "/images/ion-thruster2.jpg"],
     "redirect": "/reports/thruster-report.pdf",
     "content": [
       "For my senior design project I worked on a small team of five to design and build a Hall-effect thruster starting from the ground up.  The thruster is small enough to operate on a 1U cubesat.  ",
@@ -18,7 +14,7 @@
 
   "project2": {
     "title": "Spartan Space Systems",
-    "images": ["/images/spartan-space-systems.png", "/images/andre.jpg"],
+    "images": ["/images/spartan-space-systems.png"],
     "redirect": "/reports/sss-report.pdf",
     "content": [
       "Spartan Space Systems is a student-led club through San Jose State University.  The mission for this project was to design a payload that lands on Jupiter’s moon, Io, to collect data.  The payload would only utilize an electrodynamic tether as a propulsion system to navigate towards Io.  I was the lead of the structures and mechanisms sub-team.  I coordinated meeting times, set clear expectations for my team, and collaborated with other subteams to ensure our mission ran efficiently.  Our team designed the overall shape of the payload, the management of how the other components would be structured into the payload, and the landing system.",
